@@ -21,6 +21,8 @@
 
 <body>
 
+
+    // 
     <div class="fixed-side-navbar">
         <ul class="nav flex-column">
             <li class="nav-item"><a class="nav-link" href="#Inicio"><span>Inicio</span></a></li>
@@ -276,7 +278,8 @@
                         <a href="#Inicio">Voltar para o topo</a>
                     </div>
 	<div class="" id="creditos">
-        <div class="container">					
+        <div class="container">		
+                     			
                     <ul>
                         <li><a href="https://www.facebook.com/Carecasdbz"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="https://twitter.com/carecasdbz"><i class="fa fa-twitter"></i></a></li>
@@ -321,27 +324,27 @@
 
     <script>
         $(document).ready(function(){
-          // Add smooth scrolling to all links
+          // Adicione rolagem suave a todos os links
           $(".fixed-side-navbar a, .primary-button a").on('click', function(event) {
 
-            // Make sure this.hash has a value before overriding default behavior
+            // Certifique-se de que this.hash tenha um valor antes de substituir o comportamento padrão
             if (this.hash !== "") {
-              // Prevent default anchor click behavior
+              // Impedir o comportamento de clique de âncora padrão
               event.preventDefault();
 
-              // Store hash
+              // Armazenamento do hash
               var hash = this.hash;
 
-              // Using jQuery's animate() method to add smooth page scroll
-              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              // Usando o método animate() do jQuery para adicionar rolagem de página suave
+              // O número opcional (800) especifica o número de milissegundos necessários para rolar para a área especificada
               $('html, body').animate({
                 scrollTop: $(hash).offset().top
               }, 800, function(){
            
-                // Add hash (#) to URL when done scrolling (default click behavior)
+                // Adicione hash (#) ao URL quando terminar de rolar (comportamento de clique padrão)
                 window.location.hash = hash;
               });
-            } // End if
+            } // Fim if
           });
         });
     </script>
